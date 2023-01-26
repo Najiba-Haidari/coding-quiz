@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(to right, pink 20%, lightblue);
+}
+
+#uppertitle { 
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+#uppertitle a{
+    text-decoration: none;
+    color: black;
+}
+
+#container div{
+   text-align: center;
+   margin: 100px;
+}
+
+.button {
+    width: 200px;
+    border: 1px solid grey;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    margin: 5px auto;
+    display: block;
+}
+.button:hover {
+    background-color: pink;
+    color: purple;
+}
+
+.hidden{
+    display: none;
+}
+.container{
+    background-color: lightyellow;
+    width: 80%;
+    height: 450px;
+    margin: auto;
+    padding: 0 5px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 10px 10px  rgba(164, 159, 159, 0.5);
+}

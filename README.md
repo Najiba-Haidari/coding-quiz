@@ -3,11 +3,7 @@ Week 4 challenge for quiz
 
 ## Your Task
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
-
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
-
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+This week's challenge is only to view a quiz with multiple choice questions and and view the final score and initials at the end.
 
 ## User Story
 
@@ -39,7 +35,7 @@ N/A
 
 ## Usage
 
-By using this webpage, you can easily generate random passwords within range of 8-128. Your password can contain lowercase letters, uppercase letters, numbers and special characters upon your choice. Generate a password and enjoy it.
+By using this webpage, you can test your knowlege about the related questions and see the scores at the end. Enjoy the quiz.
 
 ## screenshot of the page
 
@@ -47,7 +43,7 @@ attached.
 ![code quiz](./Assets/04-web-apis-homework-demo.gif) "Code Quiz")
 
 ## URL of Github Repository
-
+https://najiba-haidari.github.io/week4-challenge-quiz/ 
 
 
 ## Credits

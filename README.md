@@ -44,10 +44,10 @@ By using this webpage, you can easily generate random passwords within range of 
 ## screenshot of the page
 
 attached. 
-![code quiz](./) "Code Quiz")
+![code quiz](./Assets/04-web-apis-homework-demo.gif) "Code Quiz")
 
 ## URL of Github Repository
-https://najiba-haidari.github.io/week3-challenge-password-generator/
+
 
 
 ## Credits

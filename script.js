@@ -1,10 +1,3 @@
-
-var index = 0;
-var score= 0;
-var correct= 0;
-var wrong = 0;
-var secondsLeft = 60;
-
 // set of questions 
 var questions = [
 {   question : "Javascript is an _______ language?",
@@ -56,6 +49,13 @@ var clearHighScores = document.querySelector("#clearHighScores");
 
 var finalscore = document.getElementById("score");
 
+var index = 0;
+var score= 0;
+var correct= 0;
+var wrong = 0;
+var secondsLeft = questions.length * 15;
+var timerInterval;
+
 // clicking the start button to start the quiz
 startButton.addEventListener("click", start);
 
@@ -63,9 +63,10 @@ startButton.addEventListener("click", start);
 // hide the quiz start part and go to questions
 function start(){
     startQuiz.classList.add("hidden");
-    questionList.classList.remove("hidden");
-    currentQuestionIndex = 0;
+    // questionList.classList.remove("hidden");
+    // currentQuestionIndex = 0;
     startQuestions();
+    // setTime();
 }
 
 function startQuestions() {
@@ -81,22 +82,17 @@ function startQuestions() {
     Answer3.textContent = questions[index].choiceThree;
     Answer4.textContent = questions[index].choiceFour;
 
-    setTime();
-
     questionList.classList.remove("hidden");
-    q
-
-// if clicking on question answers show the correct result and stop when the questions ends;
-
-    goNextQuestion();
+    // goNextQuestion();
+    setTime();
 }
 
-questionList.addEventListener("click", startQuestions);
+// questionList.addEventListener("click", startQuestions);
 
 questionList.addEventListener("click", function(event){
  var chosen= event.target.textContent;
- if (questions == questions[index].choiceOne && questions == questions[index].choiceTwo && questions == questions[index].choiceThree && questions == questions[index].choiceFour ){
-
+//  if (questions == questions[index].choiceOne && questions == questions[index].choiceTwo && questions == questions[index].choiceThree && questions == questions[index].choiceFour ){
+if (chosen === questions[index].rightAnswer ){
  }
  else{
     secondsLeft = secondsLeft - 10;
@@ -104,77 +100,36 @@ questionList.addEventListener("click", function(event){
  goNextQuestion();
 });
 
-
+function goNextQuestion(){
+    index++;
+    if (index >= questions.length){
+        endGame();
+        // return;
+    }
+    else{
+        startQuestions();
+    }
+    }
 // setting the time interval
-var currentQuestionIndex= 0;
-var answer;
-
 function setTime (){
-    var timerInterval = setInterval (function(){
+timerInterval = setInterval (function(){
     secondsLeft--;
     timeLeft.textContent = "Time: " + secondsLeft + " seconds";
-    if (secondsLeft <= 0 || questionNumber === questions.length) {
-        clearInterval(timerInterval);
+    if (secondsLeft <= 0 || index === questions.length) {
+        // clearInterval(timerInterval);
+        endGame();
     }
     }, 1000);
 }
 
-
-function goNextQuestion(event){
-    index++;
-    if (index => questions.length){
-
-        // endGame();
-        return;
-    }
-    startQuestions();
-    }
-
 function sendMessage(){
-    timeLeft.textContent = "Time is up";
+    timeLeft.textContent = "Time is Over";
 }
 
 function endGame(){
     sendMessage();
     questionList.classList.add("hidden");
     finalResult.classList.remove("hidden");
-    var initials = document.querySelector("#name").value ;
+    // var initials = document.querySelector("#name").value ;
+    clearInterval(timerInterval);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

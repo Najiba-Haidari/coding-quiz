@@ -1,5 +1,4 @@
 # week4-challenge-quiz
-Week 4 challenge for quiz
 
 ## Your Task
 
@@ -39,8 +38,8 @@ By using this webpage, you can test your knowlege about the related questions an
 
 ## screenshot of the page
 
-attached. 
-![code quiz](./Assets/04-web-apis-homework-demo.gif) "Code Quiz")
+
+![code quiz](./Assets/Screenshot%202023-06-16%20at%202.08.24%20PM.png) 
 
 ## URL of Github Repository
 https://najiba-haidari.github.io/week4-challenge-quiz/ 
@@ -52,4 +51,4 @@ N/A
 
 ## License
 
-Please refer to the LICENSE in the repo.
+This project is under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

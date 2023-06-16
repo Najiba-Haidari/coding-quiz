@@ -1,4 +1,4 @@
-# week4-challenge-quiz
+# coding-quiz
 
 ## Your Task
 
@@ -38,12 +38,11 @@ By using this webpage, you can test your knowlege about the related questions an
 
 ## screenshot of the page
 
-
-![code quiz](./Assets/Screenshot%202023-06-16%20at%202.08.24%20PM.png) 
+![code quiz](./Assets/Screenshot%202023-06-16%20at%202.08.24%20PM.png)
 
 ## URL of Github Repository
-https://najiba-haidari.github.io/week4-challenge-quiz/ 
 
+https://najiba-haidari.github.io/coding-quiz/
 
 ## Credits
 
